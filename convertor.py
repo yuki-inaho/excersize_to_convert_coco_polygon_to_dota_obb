@@ -71,8 +71,6 @@ def main():
         assert len(annotation_data["segmentation"]) == 1
 
         obb_polygon = annotation_data["segmentation"][0]  # obb: oriented bbox, quadruple pairs of (x_i, y_i)
-        assert len(obb_polygon) == 8
-
         obb_ann_info = BboxToolkit.poly2obb(np.asarray(obb_polygon))
         obb = OrientedBBox(
             category_name=category_dict_id2label[category_id],

@@ -1,0 +1,4 @@
+pycocotools
+-e git+https://github.com/jbwang1997/BboxToolkit.git#egg=BboxToolkit
+matplotlib
+jupyterlab
